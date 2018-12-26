@@ -26,7 +26,7 @@ Object.defineProperty(account1,"balance",{
     number:101
 
 }*/
-account1.balance=2000
+//account1.balance=2000
 for(var key in account1){
     console.log("key "+key+" value "+ account1[key])
 }
