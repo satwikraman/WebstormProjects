@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c73acd97-1aa0-4e80-b142-77faaf82b12a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PG3.js" beforeDir="false" afterPath="$PROJECT_DIR$/PG3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PG8.js" beforeDir="false" afterPath="$PROJECT_DIR$/PG8.js" afterDir="false" />
-    </list>
+    <list default="true" id="c73acd97-1aa0-4e80-b142-77faaf82b12a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -239,23 +235,22 @@
       <workItem from="1545422662532" duration="662000" />
       <workItem from="1545423898242" duration="2148000" />
       <workItem from="1545688697051" duration="1203000" />
-      <workItem from="1545842322029" duration="4298000" />
+      <workItem from="1545842322029" duration="5493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44708000" />
+    <option name="totallyTimeSpent" value="45903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45826513" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45826513" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
