@@ -20,4 +20,5 @@ obj2.printMessage=obj.printMessage
 //obj2.printMessage()
 //printMessage.call(obj,1,2,4)
 //printMessage.call(obj2)
-printMessage.apply(obj1,arr)
+printMessage.apply(obj,arr)
+console.log(this)
