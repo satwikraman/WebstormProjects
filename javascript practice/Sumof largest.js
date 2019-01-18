@@ -1,19 +1,14 @@
 var a =[1,0,1];
-var l1=a[0],l2=a[1];
-for(let i=0;i<a.length;i++){
-    if(a[i]>l1){
-
-        l1=a[i];
+function lar(){
+let l1=a[0],index=0;
+for(let i=0;i<a.length;i++) {
+    if (a[i] > l1) {
+        l1 = a[i];
+        index = i;
     }
-    if(l1===a[i+1]){
-        continue;
-    }
-   if((a[i]>=l2)&&(l1!=a[i])){
-       l2=a[i];
-    }
-    }
+}
+a.splice(index,1);
+return l1;
+}
+console.log(lar()+lar());
 
-
-
-
-console.log(l1,l2);
