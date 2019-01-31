@@ -26,32 +26,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BootStrap/ListGroups Panel DropDown.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" column="95" selection-start-line="5" selection-end-line="8" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BootStrap/ProgressBar.html">
+        <entry file="file://$PROJECT_DIR$/BootStrap/Collapse TabsPills NavBars.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="8" selection-end-column="95" />
+            <state relative-caret-position="136">
+              <caret line="8" column="95" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BootStrap/Forms and inputs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML/Attributes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,14 +95,16 @@
         <option value="$PROJECT_DIR$/BootStrap/Badges/Labels.html" />
         <option value="$PROJECT_DIR$/BootStrap/Labels.html" />
         <option value="$PROJECT_DIR$/BootStrap/ProgressBar.html" />
-        <option value="$PROJECT_DIR$/HTML/Attributes.html" />
         <option value="$PROJECT_DIR$/BootStrap/Pgination and Pager.html" />
         <option value="$PROJECT_DIR$/BootStrap/BS demo.html" />
         <option value="$PROJECT_DIR$/BootStrap/ListGroups Panel DropDown.html" />
+        <option value="$PROJECT_DIR$/BootStrap/Collapse TabsPills NavBars.html" />
+        <option value="$PROJECT_DIR$/BootStrap/Forms and inputs.html" />
+        <option value="$PROJECT_DIR$/HTML/Attributes.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -116,7 +126,7 @@
             <path>
               <item name="Satwik java script" type="b2602c69:ProjectViewProjectNode" />
               <item name="Satwik java script" type="462c0819:PsiDirectoryNode" />
-              <item name="BootStrap" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,7 +218,10 @@
       <workItem from="1548161787172" duration="80000" />
       <workItem from="1548174768581" duration="6178000" />
       <workItem from="1548260661622" duration="6526000" />
-      <workItem from="1548346563545" duration="22275000" />
+      <workItem from="1548346563545" duration="28198000" />
+      <workItem from="1548689563985" duration="1181000" />
+      <workItem from="1548863734587" duration="599000" />
+      <workItem from="1548969072631" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="16-01-2019">
       <created>1547683178710</created>
@@ -235,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62776000" />
+    <option name="totallyTimeSpent" value="71653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -487,33 +500,10 @@
     <entry file="file://$PROJECT_DIR$/HTML/html.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Attributes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BootStrap/BS demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BootStrap/Pgination and Pager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BootStrap/BS demo.html" />
     <entry file="file://$PROJECT_DIR$/BootStrap/ProgressBar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
+        <state relative-caret-position="17">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="8" selection-end-column="95" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -531,10 +521,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JavaScript-modules-diagram/D:/Satwik java script/BootStrap/Forms and inputs.html">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/BootStrap/Forms and inputs.html</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/BootStrap/Forms and inputs.html</node>
+            <node x="" y="">https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js</node>
+            <node x="" y="">https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css</node>
+            <node x="" y="">https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="189.0" y="115.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BootStrap/Pgination and Pager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BootStrap/ListGroups Panel DropDown.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="8" column="95" selection-start-line="5" selection-end-line="8" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BootStrap/Collapse TabsPills NavBars.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="95" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BootStrap/Forms and inputs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/Attributes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
