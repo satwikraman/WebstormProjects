@@ -9,9 +9,17 @@ class Person extends EventEmitter{
         super();
         this._name=name;
     }
-    get(name){
-        this._name;
+    get name(){
+       return this._name;
     }
 }
 let satwik= new Person('satwik');
-satwik.on
+satwik.on('name',()=>{
+    console.log("My name is " +satwik.name);
+});
+let raman= new Person('raman');
+raman.on('name',()=>{
+    console.log("My name is " +raman.name);
+});
+satwik.emit('name');
+raman.emit('name');
