@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "file:express",
+    "latest-version": "^4.0.0",
     "node": "^11.10.0"
   },
   "devDependencies": {
