@@ -12,7 +12,9 @@
     "express": "file:express",
     "node": "^11.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/satwikraman/WebstormProjects.git"
