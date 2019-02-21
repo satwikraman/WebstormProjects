@@ -9,7 +9,8 @@
   "author": "satwik",
   "license": "ISC",
   "dependencies": {
-    "express": "file:express"
+    "express": "file:express",
+    "node": "^11.10.0"
   },
   "devDependencies": {},
   "repository": {
