@@ -1,14 +1,28 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "parectice of node js",
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "satwik",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "file:express"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satwikraman/WebstormProjects.git"
+  },
+  "keywords": [
+    "just",
+    "for",
+    "sop"
+  ],
+  "bugs": {
+    "url": "https://github.com/satwikraman/WebstormProjects/issues"
+  },
+  "homepage": "https://github.com/satwikraman/WebstormProjects#readme"
 }
