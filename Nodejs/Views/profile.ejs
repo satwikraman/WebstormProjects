@@ -34,13 +34,19 @@
 </nav>
 
 <div class="container">
-    <ul class="nav nav-pills">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
+    <ul class="list-group">
+        <%data.hobbies.foEach(function(item){%>
+            <li><%=item%></li>
+        });%> 
     </ul>
-  
+    <h1 id="temp">Your Name is <%=person%></h1>
+    <p><strong>Age: </strong><%=data.Age%></p>
+    <p><strong>Age: </strong><%=data.Job%></p>
+    <ul class="list-group">
+        <% data.hobbies.forEach( function(item){ %>
+            <li><%= item %></li>
+       <% }); %> 
+    </ul>
 </div>
 </body>
 </html>
