@@ -1,5 +1,5 @@
 var http= require('http');
-var fs= require('fs');
+
 var server=http.createServer(function(req,res){
     console.log('request was made');
     res.writeHead(200,{'Content-Type':'application/json'});
