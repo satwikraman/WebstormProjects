@@ -10,7 +10,7 @@
 <body>
 <div id="app"></div>
 <div id="app"></div>
-<script >
+<script type="text/babel">
 class App extends React.Component{
     state={
         name:'satwik',
@@ -19,9 +19,9 @@ class App extends React.Component{
     render(){
         return(
             <div className="app-content">
-            <h1>Hi, Guys</h1>
-            <p>{}</p>
-            <p>{Math.random*10}</p>
+                <h1>Hi, Guys</h1>
+                <p>My name is{this.state.name} and i am {this.state.age}</p>
+                <p>{Math.random*10}</p>
             </div>
         )
     }
