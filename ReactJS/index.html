@@ -14,19 +14,19 @@
 class App extends React.Component{
     state={
         name:'satwik',
-        age:'23'
+        age:23
+    }
+    handleClick(e){
+        console.log(e.target);
     }
     render(){
         return(
             <div className="app-content">
-<<<<<<< HEAD
-            <h1>Hi, Satwik</h1>
+            <h1>Hi, Guys</h1>
+            <p>My name is <strong>{this.state.name}</strong>. I am {this.state.age}.</p>
             <p>{Math.random()*10}</p>
-=======
-                <h1>Hi, Guys</h1>
-                <p>My name is{this.state.name} and I am {this.state.age}</p>
-                <p>{Math.random()*10}</p>
->>>>>>> a8817ae9f13cf2dad9a49d1fcf49e8095aca13bf
+            <button onClick={this.handleClick}>clickMe</button>
+            <button>HoverMe</button>
             </div>
         )
     }
