@@ -16,8 +16,19 @@ class App extends React.Component{
         name:'satwik',
         age:23
     }
-    handleClick(e){
+    handleClick=(e)=>{
         console.log(e.target);
+        this.setState({
+            name:'Satwik Raman',
+            age:23.2
+        })
+    }
+    handleHover=(e)=>{
+        console.log(e.pageX);
+    }
+    handleCopy=(e)=>{
+        document.write('copying is prohibited');
+        
     }
     render(){
         return(
@@ -26,7 +37,8 @@ class App extends React.Component{
             <p>My name is <strong>{this.state.name}</strong>. I am {this.state.age}.</p>
             <p>{Math.random()*10}</p>
             <button onClick={this.handleClick}>clickMe</button>
-            <button>HoverMe</button>
+            <button onMouseOver={this.handleHover}>HoverMe</button>
+            <p onCopy={this.handleCopy}>please don't the text</p>
             </div>
         )
     }
