@@ -1,9 +1,9 @@
-var http= require('http');
-var fs= require('fs');
-var server=http.createServer(function(req,res){
-    res.writeHead(200,{'content-type':'text/html'});
-    var myReadStream=fs.createReadStream(__dirname+'/index.html','utf8');
-    myReadStream.pipe(res);     
+var express=require('express');
+var app= express();
+app.get('/',function(req,res){
+    res.sendFile(__dirname+'/index.html')
 });
-server.listen(3030,'127.0.0.1');
-console.log('server started');
+app.get('/form',function(req,res){
+    res.sendFile(__dirname+'/Form.html')
+});
+app.listen(3030);
