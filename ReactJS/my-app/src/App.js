@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Satwik from './Satwik';
 class App extends Component {
   state={
     name:'satwik',
@@ -28,7 +29,8 @@ handleCopy=(e)=>{
             <button onClick={this.handleClick}>clickMe</button>
             <button onMouseOver={this.handleHover}>HoverMe</button>
             <p onCopy={this.handleCopy}>please don't the text</p>
-            </div>
+            <Satwik />
+      </div>
     );
   }
 }
