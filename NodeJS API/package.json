@@ -1,19 +1,9 @@
 {
   "name": "",
-  "version": "",
   "dependencies": {
+    "eslint": "^5.15.1",
     "express": "^4.16.4",
-    "mongodb": "^3.1.13",
-    "mongoose": "^5.4.17",
     "node": "^10.15.2"
   },
-  "devDependencies": {
-    "eslint": "^5.15.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "nodemon": "^1.18.10"
-  }
+  "version": ""
 }
