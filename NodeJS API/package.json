@@ -3,6 +3,7 @@
   "dependencies": {
     "eslint": "^5.15.1",
     "express": "^4.16.4",
+    "mongoose": "^5.4.17",
     "node": "^10.15.2"
   },
   "version": ""

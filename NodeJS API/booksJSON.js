@@ -32,3 +32,4 @@ db.books.insert([
         ]
       }
     ])
+    //cmd----mongo bookAPI < booksJSON.js
