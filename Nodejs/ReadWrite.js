@@ -1,7 +1,7 @@
 var fs= require('fs');
 fs.readFile('readText.txt','utf8',function(err,data){
     fs.writeFile('WriteText.txt',data);
-    console.log(data);
+    //console.log(data);
 });
 //fs.unlink('./stuff/writeFile.txt');
 //fs.mkdirSync('STUFF');
