@@ -1,2 +1,2 @@
-document.write('<h1>Hey</h1>');
+document.write('<h1>h</h1>');
 console.log("logged");

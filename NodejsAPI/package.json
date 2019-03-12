@@ -1,0 +1,20 @@
+{
+  "name": "nodejsapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint": "^5.15.1",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "node": "^10.15.3",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
