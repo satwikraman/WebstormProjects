@@ -4,6 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "eslint": "^5.15.1",
     "mongoose": "^5.4.19"
   },
