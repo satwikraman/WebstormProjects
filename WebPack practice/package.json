@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -p && webpack-dev-server"
+    "build": "webpack && webpack-dev-server"
   },
   "author": "satwik",
   "license": "ISC",

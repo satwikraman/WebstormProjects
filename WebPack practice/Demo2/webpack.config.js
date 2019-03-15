@@ -5,6 +5,5 @@ entry:{
 },
 output:{
     filename:'[name].js'
-},
-watch:true
+}
 };
