@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "mongodb": "^3.1.13",
+    "mongodb-core": "^3.1.11",
     "mongoose": "^5.4.17",
     "package-json": "^6.0.0"
   },

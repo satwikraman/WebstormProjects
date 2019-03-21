@@ -1,5 +1,6 @@
 var express=require('express');
 var bodyParser=require('body-parser');
+//const registrationdb=require('./models/schema');
 var app=express();
 
 app.use(bodyParser.urlencoded({extended:false}));
