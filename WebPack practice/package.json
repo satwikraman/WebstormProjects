@@ -1,0 +1,23 @@
+{
+  "name": "webpackpractice",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack && webpack-dev-server"
+  },
+  "author": "satwik",
+  "license": "ISC",
+  "dependencies": {
+    "file-loader": "^3.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.2"
+  
+  }
+}

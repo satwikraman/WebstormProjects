@@ -1,0 +1,22 @@
+{
+  "name": "demo4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack  && webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-loader": "^3.0.1",
+    "latest": "^0.2.0",
+    "url-loader": "^1.1.2",
+    "version": "^0.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "devDependencies": {}
+}

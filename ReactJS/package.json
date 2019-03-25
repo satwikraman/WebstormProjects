@@ -1,0 +1,17 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run build",
+    "build":"nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
