@@ -3,11 +3,19 @@ const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
 
 const app=express();
-const db=mongoose.connect('mongodb://localhost/bookAPI');
 const bookRouter=express.Router();
 const port=3000;
 const Book = require('./models/bookModel');
 
+mongoose.connect('mongodb://localhost:27017/bookAPI', (err)=> {
+    if(err){
+        console.log("Not connected");
+    }else
+    {
+        console.log("succssfully connected");   //Database connection
+    }
+
+});
 bookRouter.route('/books')
 .get((req,res)=>{
     const query={};
