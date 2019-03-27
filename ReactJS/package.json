@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "npm run build",
-    "build":"nodemon server.js"
+    "build": "nodemon server.js"
   },
   "author": "",
   "license": "ISC"
