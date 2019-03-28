@@ -1,12 +1,13 @@
-import React,{component} from 'react';
+import React, {Component} from 'react';
 
-class C1 extends component{
+class C1 extends Component{
     render(){
+         const {Name, Age, Height}=this.props
         return(
             <div className="c1">
-                <div>Name: Satwik</div>
-                <div>Age:23</div>
-                <div>Height:5.8</div>
+                <div>Name: {Name}</div>
+                <div>Age:{Age}</div>
+                <div>Height:{Height}</div>
             </div>
         )
     }
