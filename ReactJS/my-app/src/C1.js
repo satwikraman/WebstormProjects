@@ -1,22 +1,38 @@
-import React from 'react';
+import React from 'react'
 
-    const C1=({ninjas})=>{
+const C1 = ({ninjas}) => {
 
-        const ninjaList=ninjas.map(ninjas=>{
-            return(
-                <div className="c1" key={ninjas.id}>
-                    <div>Name: {ninjas.name}</div>
-                    <div>Age:{ninjas.age}</div>
-                    <div>Height:{ninjas.height}</div>
-                </div>
-            )
-        })
-        return(
-            <div className="className ninjaList">
-                {ninjaList}
+  // const { ninjas } = this.props;
+  // const ninjaList = ninjas.map(ninja => {
+  //   if (ninja.age > 20){
+  //     return (
+  //       <div className="ninja" key={ninja.id}>
+  //         <div>Name: { ninja.name }</div>
+  //         <div>Age: { ninja.age }</div>
+  //         <div>Belt: { ninja.belt }</div>
+  //       </div>
+  //     )
+  //   } else {
+  //     return null
+  //   }
+  // });
+
+  return (
+    <div className="ninja-list">
+      { 
+        ninjas.map(ninja => {
+          return ninja.age > 20 ? (
+            <div className="ninja" key={ninja.id}>
+              <div>Name: { ninja.name }</div>
+              <div>Age: { ninja.age }</div>
+              <div>Height: { ninja.height }</div>
             </div>
-        )
-       
-    }
+          ) : null
+        })
+      }
+    </div>
+  );
+
+}
 
 export default C1
