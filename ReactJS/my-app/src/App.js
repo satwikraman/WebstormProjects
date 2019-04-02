@@ -10,11 +10,11 @@ class App extends Component {
       {name:'vivek', age:22,height:5.8,id:3}
     ]
   }
-  addState=(ninja)=>{
+  addstate=(ninja)=>{
     ninja.id = Math.random();
-    const newState=[...this.state.ninjas,ninja];
+    let ninjas=[...this.state.ninjas,ninja];
     this.setState=({
-      ninjas:newState
+      ninjas:ninjas
     })
   }
   render() {
@@ -23,7 +23,7 @@ class App extends Component {
         <h1>My First React App</h1>
         <p>welcome :)</p>
         <C1 ninjas={this.state.ninjas}/>
-        <AddState addState={this.addState}/>
+        <AddState addstate={this.addstate} />
       </div>
     );
   }

@@ -14,8 +14,8 @@ class AddState extends Component{
     }
     handleSubmit=(e)=>{
         e.preventDefault();
+        this.props.addstate(this.state);
         console.log(this.state);
-        this.props.addState(this.state);
     }
     render(){
         return(
