@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\kanpuri\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;%ANDROID_HOME%;%ANDROID_TOOL%;%ANDROID_PLATFORM_TOOLS%;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;C:\Users\kanpuri\Downloads\apache-maven-3.5.0\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Git\cmd;C:\Users\kanpuri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\kanpuri\AppData\Local\Microsoft\WindowsApps;C:\Users\kanpuri\AppData\Local\GitHubDesktop\bin;C:\Users\kanpuri\AppData\Local\Microsoft\WindowsApps;C:\Users\kanpuri\AppData\Local\Android\sdk\platform-tools;C:\Users\kanpuri\AppData\Local\Android\sdk\tools;C:\Program Files\Microsoft VS Code\bin;C:\Users\kanpuri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Users\kanpuri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\kanpuri\AppData\Roaming\npm
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "C:\\satwik\\UIPractice\\Nodejs"
+      at new MessageError (C:\Users\kanpuri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at C:\Users\kanpuri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (C:\Users\kanpuri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\kanpuri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13

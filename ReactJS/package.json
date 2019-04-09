@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "create-react-app": "^2.1.8",
     "express": "^4.16.4",
     "nodemon": "^1.18.10"
   },
