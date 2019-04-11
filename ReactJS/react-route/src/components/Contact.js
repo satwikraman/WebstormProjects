@@ -1,0 +1,11 @@
+import React from 'react';
+const Contact=()=>{
+    return(
+        <div>
+            <div className="container">
+                <h4 className="center">Contact</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate earum laborum odio nam reiciendis consectetur iste excepturi hic dignissimos, tempora officia architecto. Hic libero odio et repellendus eligendi. Illo.</p>
+            </div>
+        </div>
+    )
+}
