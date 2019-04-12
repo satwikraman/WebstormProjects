@@ -1,17 +1,20 @@
 import React from 'react';
-
-const Navbar=()=>{
+import {Link, NavLink, withRouter} from 'react-router-dom';
+const Navbar=(props)=>{
+    setTimeout(() => {
+        props.history.push('/')
+      }, 2000);
     return(
         <nav className="nav-wrapper red darker-3">
             <div className="container">
-                <a className="brand-logo">Routing</a>
+                <Link to='/' className="brand-logo">Routing</Link>
                 <ul className="right">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </div>
         </nav>
         )
 }
-export default Navbar;
+export default withRouter(Navbar);

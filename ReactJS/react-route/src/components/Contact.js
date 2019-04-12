@@ -1,5 +1,6 @@
 import React from 'react';
-const Contact=()=>{
+const Contact=(props)=>{
+    console.log(props);
     return(
         <div>
             <div className="container">
@@ -9,3 +10,4 @@ const Contact=()=>{
         </div>
     )
 }
+export default Contact;
