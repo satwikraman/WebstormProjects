@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import Todos from './Todos'
 import AddTodos from './AddTodos'
 class App extends Component {
   state = {
-    todos: [
-      {id: 1, content: 'buy some milk'},
-      {id: 2, content: 'play mario kart'}
-    ]
+    todos: []
+  }
+  componentDidMount(){
+    axios.get('https://jsonplaceholder.typicode.com/')
   }
   addTodo=(todo)=>{
     todo.id=Math.random();
