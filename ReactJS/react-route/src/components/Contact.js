@@ -1,4 +1,6 @@
 import React from 'react';
+import HigherComponent from '../components/hoc/HigherComponent';
+
 const Contact=(props)=>{
     console.log(props);
     return(
@@ -10,4 +12,4 @@ const Contact=(props)=>{
         </div>
     )
 }
-export default Contact;
+export default HigherComponent(Contact);
