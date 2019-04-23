@@ -1,0 +1,126 @@
+Result
+EDIT ON
+ body {
+  background: radial-gradient(rgb(171, 230, 225), rgb(145, 152, 229));
+}
+
+.face {
+  background-color: hsla(40, 95%, 66%, 0.43);
+  width: 300px;
+  height: 300px;
+  margin: 150px auto;
+  border-radius: 50%;
+  position: relative;
+  border: 20px solid hsla(40, 95%, 66%, 0.43);
+  box-shadow: inset 2px 2px 20px 1px hsla(0, 0%, 0%, 0.31), 2px 2px 20px 1px hsla(0, 0%, 0%, 0.31);
+}
+
+/* place all container centered on face */
+.hourHand__container, .minuteHand__container, .secondHand__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* animation */
+@keyframes rotation{
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.secondHand__container {
+  animation: rotation 60s infinite steps(60, end);
+}
+
+
+.hourHand {
+  width: 8px;
+  height: 80px;
+  background-color: hsla(262, 54%, 47%, 0.9);
+  left: 146px;
+  bottom: 150px;
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 2px 2px 20px 2px hsla(0, 0%, 0%, 0.31);
+}
+
+.minuteHand {
+  width: 8px;
+  height: 105px; 
+  background-color: hsl(51, 65%, 62%);
+  position: absolute;
+  left: 146px;
+  bottom: 150px;
+  transform-origin: bottom;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 2px 2px 20px 2px hsla(0, 0%, 0%, 0.31);
+}
+
+.secondHand {
+  width: 4px;
+  height: 130px;
+  background-color: grey;
+  position: absolute;
+  left: 148px;
+  bottom: 140px;
+  transform-origin: 2px 120px;
+/*   transition: transform 0.2s cubic-bezier(.48,1.95,.37,.37);  */
+  box-shadow: 1px 1px 20px 1px hsla(0, 0%, 0%, 0.31);
+}
+
+.face::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.face > p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  color: grey;
+  position: absolute;
+}
+
+p.twelve {
+  margin: 0;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+p.three {
+  margin: 0;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+p.six {
+  margin: 0;
+  bottom: 0%;
+  right: 50%;
+  transform: translate(50%);
+  position: absolute;
+}
+
+p.nine {
+  margin: auto;
+  top: 50%;
+  left: 0%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}

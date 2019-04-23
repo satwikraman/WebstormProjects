@@ -7,7 +7,13 @@ class App extends Component {
     todos: []
   }
   componentDidMount(){
-    axios.get('https://jsonplaceholder.typicode.com/')
+    axios.get('https://jsonplaceholder.typicode.com/todos')
+    .then(res=>{
+      console.log(res);
+      this.setState({
+        todos:res.data.slice(0,10)
+      })
+    })
   }
   addTodo=(todo)=>{
     todo.id=Math.random();
@@ -28,7 +34,7 @@ class App extends Component {
     return (
       <div className="todo-app container">
         <h1 className="center blue-text">Todo's</h1>
-        <Todos deleteTodo={this.deleteTodo} todos={this.state.todos}/>
+        <Todos deleteTodo={this.deleteTodo} todos={this.state.todos} />
         <AddTodos addTodo={this.addTodo} />
       </div>
     );
