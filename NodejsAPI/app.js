@@ -4,7 +4,7 @@ const bodyParser=require('body-parser');
 
 const app=express();
 const bookRouter=express.Router();
-const port=3000;
+const port=5000;
 const Book = require('./models/bookModel');
 
 mongoose.connect('mongodb://localhost:27017/bookAPI', (err)=> {
@@ -14,7 +14,6 @@ mongoose.connect('mongodb://localhost:27017/bookAPI', (err)=> {
     {
         console.log("succssfully connected");   //Database connection
     }
-
 });
 bookRouter.route('/books')
 .get((req,res)=>{
