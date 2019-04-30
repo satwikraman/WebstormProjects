@@ -1,42 +1,42 @@
 import React from 'react';
 
-var C1=({questions,rowNo})=>{
+var C1=({questions,rowNo,handleSubmit})=>{
     questions=questions.filter(que=>{
         return que.rowNo===rowNo
     })
     var questionList=questions.length ?(questions.map((que)=>{
         return(
-            <div className=" container">
+            <div className=" container" key={rowNo}>
           
-            <form action="#">
+            <form className="with-gap" onSubmit={handleSubmit}>
             <div className="Container" dangerouslySetInnerHTML={{__html: que.question}}></div>
-            <p>
+        
             <label>
-                <input name="group1" type="radio"  />
+                <input name="group1" value="a" type="radio"  />
                 <span>{que.answerOne}</span>
             </label>
-            </p>
-            <p>
+
+            <br />
             <label>
-                <input name="group1" type="radio" />
+                <input name="group1" value="b"  type="radio" />
                 <span>{que.answerTwo}</span>
             </label>
-            </p>
-            <p>
+          
+            <br />
             <label>
-                <input  name="group1" type="radio"  />
+                <input  name="group1" value="c" type="radio"  />
                 <span>{que.answerThree}</span>
             </label>
-            </p>
-            <p>
+      
+            <br />
             <label>
-                <input name="group1" type="radio"  />
+                <input name="group1" value="d" type="radio"  />
                 <span>{que.answerFour}</span>
              </label>
-            </p>
+             <br />
             <button className="btn waves-effect waves-light  right" type="submit" >Submit</button>
             <hr />
-            <br />
+           
             </form>
               
                
