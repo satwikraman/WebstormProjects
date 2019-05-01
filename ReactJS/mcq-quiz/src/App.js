@@ -14,7 +14,7 @@ componentDidMount(){
   fetch("https://test.stag.talentscreen.io/v1/tsq/tschallenges?subjectid=56&levelid=1&questiontype=choice&authentication=false")
   .then(resp=>resp.json())
   .then(resp=>{
-
+    
     this.setState({
       questions: resp.questions
     })
@@ -27,29 +27,23 @@ handleSubmit=(e)=>{
   this.setState({
     rowNo: rowNo
   })
-
-console.log(e.target)
+  //console.log(this.state.questions);
 }
 handleChange=(e)=>{
-  e.preventDefault();
-  //let questions=this.state.questions
-  //let candidateAnswer=e.target.value
+  let rowNo=this.state.rowNo
+  let questions=this.state.questions
+  let candidateAnswer=e.target.value
+  questions[rowNo].candidateAnswer=candidateAnswer
   
   this.setState({
-     
+    questions:questions
   })
 }
   render(){
-    let questions=this.state.questions;
-    let rowNo=this.state.rowNo;
-    let question=questions[rowNo]
-    for(var i in question){
-      console.log(i);
-    }
+    
   return (
     <div className="App">
-    <C1 handleSubmit={this.handleSubmit}  rowNo={this.state.rowNo} questions={this.state.questions}/>
-
+      <C1 handleSubmit={this.handleSubmit}  rowNo={this.state.rowNo} handleChange={this.handleChange} questions={this.state.questions}/>
     </div>
   );
 }

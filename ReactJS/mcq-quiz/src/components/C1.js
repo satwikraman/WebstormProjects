@@ -1,6 +1,6 @@
 import React from 'react';
 
-var C1=({questions,rowNo,handleSubmit})=>{
+var C1=({questions,rowNo,handleSubmit,handleChange})=>{
     questions=questions.filter(que=>{
         return que.rowNo===rowNo
     })
@@ -12,25 +12,25 @@ var C1=({questions,rowNo,handleSubmit})=>{
             <div className="Container" dangerouslySetInnerHTML={{__html: que.question}}></div>
         
             <label>
-                <input name="group1" value="a" type="radio"  />
+                <input name="group1"  onChange={handleChange} value="a" type="radio"  />
                 <span>{que.answerOne}</span>
             </label>
 
             <br />
             <label>
-                <input name="group1" value="b"  type="radio" />
+                <input name="group1"    onChange={handleChange} value="b"  type="radio" />
                 <span>{que.answerTwo}</span>
             </label>
           
             <br />
             <label>
-                <input  name="group1" value="c" type="radio"  />
+                <input  name="group1"  onChange={handleChange} value="c" type="radio"  />
                 <span>{que.answerThree}</span>
             </label>
       
             <br />
             <label>
-                <input name="group1" value="d" type="radio"  />
+                <input name="group1"    onChange={handleChange} value="d" type="radio"  />
                 <span>{que.answerFour}</span>
              </label>
              <br />
