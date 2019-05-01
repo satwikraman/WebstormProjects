@@ -6,7 +6,7 @@ var C1=({questions,rowNo,handleSubmit,handleChange})=>{
     })
     var questionList=questions.length ?(questions.map((que)=>{
         return(
-            <div className=" container" key={rowNo}>
+            <div className="container" key={rowNo}>
           
             <form className="with-gap" onSubmit={handleSubmit}>
             <div className="Container" dangerouslySetInnerHTML={{__html: que.question}}></div>
@@ -34,9 +34,7 @@ var C1=({questions,rowNo,handleSubmit,handleChange})=>{
                 <span>{que.answerFour}</span>
              </label>
              <br />
-            <button className="btn waves-effect waves-light  right" type="submit" >Submit</button>
-            <hr />
-           
+            <button className="btn waves-effect waves-light right" type="submit" >Submit</button>
             </form>
               
                
@@ -47,7 +45,6 @@ var C1=({questions,rowNo,handleSubmit,handleChange})=>{
     )
 return(
    <div>
-       <hr />
        {questionList}
    </div>
    
