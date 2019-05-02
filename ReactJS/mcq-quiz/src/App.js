@@ -5,7 +5,7 @@ class App extends React.Component {
 constructor(props){
   super(props);
   this.state={
-    questions:[],
+    resp:{},
     rowNo:0
   }
 }
@@ -14,36 +14,44 @@ componentDidMount(){
   fetch("https://test.stag.talentscreen.io/v1/tsq/tschallenges?subjectid=56&levelid=1&questiontype=choice&authentication=false")
   .then(resp=>resp.json())
   .then(resp=>{
-    
     this.setState({
-      questions: resp.questions
+      resp: resp
     })
+    
   })
 }
 
 handleSubmit=(e)=>{
   e.preventDefault();
+  let resp=this.state.resp;
+  if(resp.questions[this.state.rowNo].candidateAnswer===resp.questions[this.state.rowNo].originalAnswer){
+    resp.correct++;
+    this.setState({
+      resp:resp
+    })
+  }
   let rowNo=this.state.rowNo+1;
   this.setState({
     rowNo: rowNo
   })
-  console.log(this.state.questions);
 }
 
 handleChange=(e)=>{
   let rowNo=this.state.rowNo
-  let questions=this.state.questions
+  let resp=this.state.resp
+  let questions=resp.questions 
   let candidateAnswer=e.target.value
   questions[rowNo].candidateAnswer=candidateAnswer
+  resp.questions=questions
   this.setState({
-    questions:questions
+    resp:resp
   })
 }
 
   render(){
   return (
     <div className="App">
-      <C1 handleSubmit={this.handleSubmit}  rowNo={this.state.rowNo} handleChange={this.handleChange} questions={this.state.questions}/>
+    <C1 handleSubmit={this.handleSubmit}  rowNo={this.state.rowNo} handleChange={this.handleChange} resp={this.state.resp}/>
     </div>
   );
 }

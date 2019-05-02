@@ -1,10 +1,14 @@
 import React from 'react';
 
-var C1=({questions,rowNo,handleSubmit,handleChange})=>{
+var C1=({resp,rowNo,handleSubmit,handleChange})=>{
+    let questions=resp.questions
+    if(questions){
     questions=questions.filter(que=>{
         return que.rowNo===rowNo
     })
+
     var questionList=questions.length ?(questions.map((que)=>{
+        
         return(
             <div className="container" key={rowNo}>
           
@@ -37,12 +41,21 @@ var C1=({questions,rowNo,handleSubmit,handleChange})=>{
             <button className="btn waves-effect waves-light right" type="submit" >Submit</button>
             </form>
               
-               
             </div>
-        )
-    })):(
-        <p>List is empty</p>
-    )
+        ) 
+    })
+    ):(
+         <div className="row">
+                <div className="col s12 m5">
+                <div className="card-panel teal">
+                    <span className="white-text">No of Correct Answers={resp.correct} out of {rowNo-1}</span>
+                </div>
+                </div>
+            </div>
+            )
+          }
+    
+    
 return(
    <div>
        {questionList}
