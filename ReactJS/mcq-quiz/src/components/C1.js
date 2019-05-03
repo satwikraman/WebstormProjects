@@ -13,8 +13,8 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
             <div className="container" key={rowNo}>
           
             <form className="with-gap" onSubmit={handleSubmit}>
-            <div className="Container" dangerouslySetInnerHTML={{__html: que.question}}></div>
-        
+                <p >{que.rowNo+1})</p>
+            <p className="Container" dangerouslySetInnerHTML={ {__html: que.question}}></p>
             <label>
                 <input name="group1"  onChange={handleChange} value="a" type="radio"  />
                 <span>{que.answerOne}</span>
@@ -45,7 +45,7 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
         ) 
     })
     ):(
-         <div className="row">
+         <div className="container row center">
                 <div className="col s12 m5">
                 <div className="card-panel teal">
                     <span className="white-text">No of Correct Answers={resp.correct} out of {rowNo-1}</span>
