@@ -1,6 +1,6 @@
 import React from 'react';
 import C1 from './components/C1'
-import Timer from './components/Timer'
+//import Timer from './components/Timer'
 
 class App extends React.Component {
 constructor(props){
@@ -53,7 +53,6 @@ handleChange=(e)=>{
   return (
     <div className="App">
     <C1 handleSubmit={this.handleSubmit}  rowNo={this.state.rowNo} handleChange={this.handleChange} resp={this.state.resp}/>
-    <Timer />
     </div>
   );
 }
