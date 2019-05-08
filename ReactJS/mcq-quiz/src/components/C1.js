@@ -1,19 +1,35 @@
 import React from 'react';
+import Timer from 'react-compound-timer'
 
 var C1=({resp,rowNo,handleSubmit,handleChange})=>{
     let questions=resp.questions
+
     if(questions){
     questions=questions.filter(que=>{
         return que.rowNo===rowNo
     })
 
-    var questionList=questions.length ?(questions.map((que)=>{
+    var questionList=questions.length ?(questions.map(que=>{
         
         return(
             <div className="container" key={rowNo}>
           
             <form className="with-gap" onSubmit={handleSubmit}>
-                <p >{que.rowNo+1})</p>
+            <p >{que.rowNo+1})</p>
+            <Timer 
+                initialTime={que.time*1000} 
+                direction="backward"
+                onStop={handleSubmit}
+            >
+                {() => (
+                <React.Fragment>
+                <div className='timer'> 
+                    <Timer.Minutes /> :
+                    <Timer.Seconds /> 
+                </div>
+                </React.Fragment>
+                )}
+            </Timer>
             <p className="Container" dangerouslySetInnerHTML={ {__html: que.question}}></p>
             <label>
                 <input name="group1"  onChange={handleChange} value="a" type="radio"  />
@@ -59,6 +75,7 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
 return(
    <div>
        {questionList}
+       
    </div>
    
 )

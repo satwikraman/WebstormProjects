@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.timer {
+  position: relative;
+  float: right;
+  padding-left: 70px;
+  top:20px;
+}
