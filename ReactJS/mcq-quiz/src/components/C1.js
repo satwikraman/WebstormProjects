@@ -3,17 +3,13 @@ import Timer from 'react-compound-timer'
 
 var C1=({resp,rowNo,handleSubmit,handleChange})=>{
     let questions=resp.questions
-
     if(questions){
     questions=questions.filter(que=>{
         return que.rowNo===rowNo
     })
-
     var questionList=questions.length ?(questions.map(que=>{
-        
         return(
             <div className="container" key={rowNo}>
-          
             <form className="with-gap" onSubmit={handleSubmit}>
             <p >{que.rowNo+1})</p>
             <div className="timer">
@@ -34,7 +30,6 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
                     <Timer.Seconds /> 
                 </div>
                 </React.Fragment>
-               
                 )}
             </Timer>
             </div>
@@ -64,7 +59,6 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
              <br />
             <button className="btn waves-effect waves-light right" type="submit" >Submit</button>
             </form>
-              
             </div>
         ) 
     })
@@ -78,15 +72,10 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
             </div>
             )
           }
-    
-    
 return(
    <div>
        {questionList}
-       
    </div>
-   
 )
 }
-
 export default C1
