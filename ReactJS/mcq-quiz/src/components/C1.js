@@ -16,10 +16,16 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
           
             <form className="with-gap" onSubmit={handleSubmit}>
             <p >{que.rowNo+1})</p>
+            <div className="timer">
             <Timer 
                 initialTime={que.time*1000} 
                 direction="backward"
-                onStop={handleSubmit}
+                checkpoints={[
+                    {
+                        time:0,
+                        callback:handleSubmit
+                    }
+                ]}
             >
                 {() => (
                 <React.Fragment>
@@ -28,8 +34,10 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
                     <Timer.Seconds /> 
                 </div>
                 </React.Fragment>
+               
                 )}
             </Timer>
+            </div>
             <p className="Container" dangerouslySetInnerHTML={ {__html: que.question}}></p>
             <label>
                 <input name="group1"  onChange={handleChange} value="a" type="radio"  />

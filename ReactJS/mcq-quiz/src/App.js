@@ -24,7 +24,7 @@ componentDidMount(){
 }
 
 handleSubmit=(e)=>{
-  e.preventDefault();
+  
   let resp=this.state.resp;
   if(resp.questions[this.state.rowNo].candidateAnswer===resp.questions[this.state.rowNo].originalAnswer){
     resp.correct++;
@@ -56,7 +56,7 @@ handleChange=(e)=>{
     <div className="App">
     <C1 handleSubmit={this.handleSubmit}  rowNo={this.state.rowNo} handleChange={this.handleChange} resp={this.state.resp}/>
     </div>
-  );
+  )
 }
 }
 export default App;
