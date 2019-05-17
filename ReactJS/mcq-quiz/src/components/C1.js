@@ -10,7 +10,7 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
     var questionList=questions.length ?(questions.map(que=>{
         return(
             <div className="container" key={rowNo}>
-            <form className="with-gap" onSubmit={handleSubmit}>
+            <form className="form-check" onSubmit={handleSubmit}>
             <p >{que.rowNo+1})</p>
             <div className="timer">
             <Timer 
@@ -33,29 +33,31 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
                 )}
             </Timer>
             </div>
-            <p className="Container" dangerouslySetInnerHTML={ {__html: que.question}}></p>
+            <p className="card-title" dangerouslySetInnerHTML={ {__html: que.question}}></p>
+            <ul class="list-group list-group-flush">
             <label>
-                <input name="group1"  onChange={handleChange} value="a" type="radio"  />
+                <input name="list-group-item"  onChange={handleChange} value="a" type="radio"  />
                 <span>{que.answerOne}</span>
             </label>
 
             <br />
             <label>
-                <input name="group1"    onChange={handleChange} value="b"  type="radio" />
+                <input name="list-group-item"    onChange={handleChange} value="b"  type="radio" />
                 <span>{que.answerTwo}</span>
             </label>
           
             <br />
             <label>
-                <input  name="group1"  onChange={handleChange} value="c" type="radio"  />
+                <input  name="list-group-item"  onChange={handleChange} value="c" type="radio"  />
                 <span>{que.answerThree}</span>
             </label>
       
             <br />
             <label>
-                <input name="group1"    onChange={handleChange} value="d" type="radio"  />
+                <input name="list-group-item"    onChange={handleChange} value="d" type="radio"  />
                 <span>{que.answerFour}</span>
              </label>
+             </ul>
              <br />
             <button className="btn waves-effect waves-light right" type="submit" >Submit</button>
             </form>
@@ -73,8 +75,11 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
             )
           }
 return(
-   <div>
+   <div className='card '>
+       <div className="card-body left">
        {questionList}
+       </div>
+      
    </div>
 )
 }
