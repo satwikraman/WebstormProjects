@@ -65,7 +65,7 @@ var C1=({resp,rowNo,handleSubmit,handleChange})=>{
     ):(
          <div className="container row center">
                 <div className="col s12 m5">
-                <div className="card-panel teal">
+                <div className="card-panel red">
                     <span className="white-text">No of Correct Answers={resp.correct} out of {rowNo-1}</span>
                 </div>
                 </div>

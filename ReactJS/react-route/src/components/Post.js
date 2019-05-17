@@ -12,7 +12,7 @@ class Post extends Component{
                 post: resp.data
              })
         })
-    }
+    }giafasdg
 render(){
   const post=this.state.post ? (
     <div className="post">
