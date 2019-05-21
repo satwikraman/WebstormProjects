@@ -19,7 +19,7 @@ class Home extends Component{
              )
          })
      ):(
-         <h4 className="center ">Loading Posts...</h4>
+         <p className="center ">Loading Posts...</p>
      )
     return(
         <div>
