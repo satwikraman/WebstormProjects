@@ -7,22 +7,16 @@ class App extends Component {
    password:'',
    auth:false
  }
-  handleChange1=(e)=>{
+  handleChange=(e)=>{
       this.setState({
-        userId :e.target.value
+        [e.target.name]: e.target.value 
       })
 
-  }
-  handleChange2=(e)=>{
-    this.setState({
-      password: e.target.value
-    })
- 
   }
   handleSubmit=(e)=>{
     e.preventDefault();
     const {username,password}=this.props.login
-    
+    console.log(this.state)
     if((this.state.userId===username)&&(this.state.password===password)){
       this.setState({
         auth:true
@@ -41,8 +35,8 @@ class App extends Component {
       <div className="card center">
       <div className="card-body ">
       <form className=" form-group" onSubmit={this.handleSubmit}>
-        userId:<input className="form-text" type="text" name="userId" onChange={this.handleChange1}/><br/>
-        Password:<input className="form-control" type="password" name="Password" onChange={this.handleChange2}/><br/>
+        userId:<input className="form-text" type="text" name="userId" onChange={this.handleChange}/><br/>
+        Password:<input className="form-control" type="password" name="password" onChange={this.handleChange}/><br/>
         <button className="btn btn-primary mb-1">Login</button>
       </form>
     </div>
