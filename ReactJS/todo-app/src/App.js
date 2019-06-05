@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+
 import Todos from './Todos'
 import AddTodos from './AddTodos'
 class App extends Component {
@@ -7,11 +7,12 @@ class App extends Component {
     todos: []
   }
   componentDidMount(){
-    axios.get('https://jsonplaceholder.typicode.com/todos')
+    fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(res=>res.json())
     .then(res=>{
       console.log(res);
       this.setState({
-        todos:res.data.slice(0,10)
+        todos:res.slice(0,10)
       })
     })
   }
