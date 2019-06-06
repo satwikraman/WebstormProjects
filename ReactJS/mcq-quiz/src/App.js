@@ -16,6 +16,7 @@ componentDidMount(){
   fetch("https://test.stag.talentscreen.io/v1/tsq/tschallenges?subjectid=56&levelid=1&questiontype=choice&authentication=false")
   .then(resp=>resp.json())
   .then(resp=>{
+    console.log(resp)
     this.setState({
       resp: resp
     })
