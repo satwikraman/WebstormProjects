@@ -11,10 +11,10 @@ class search extends React.Component{
     render(){
         return(
             <div className="container input-group mb-3 center home " style={{width: '360px', left: '100px', top: '200px'}}>
-                <form onSubmit={this.handleClick}>
                 <input type="text" className="form-control" placeholder="Enter car model" onChange={(e)=>{this.setState({value:e.target.value})}}  aria-describedby="basic-addon2" />
-                    <button className="input-group-append btn btn-outline-secondary"  type="button">Button</button>
-                </form>
+                <div className="input-group-append">
+                    <button className="btn btn-outline-secondary" onClick={this.handleClick} type="button">Button</button>
+                </div>
             </div>
 )
     }
