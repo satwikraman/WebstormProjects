@@ -1,5 +1,5 @@
-const initialState={
- data:[
+const initialState = {
+  data: [
     {
       "category": "used",
       "make": "Chevrolet",
@@ -33,10 +33,10 @@ const initialState={
       "description": "2012 Chevrolet Suburban LT with Leather, 2nd Row Buckets, and 20\"; Alloys. Clean CARFAX. <br /><br /><br />Feel free to call our internet department at 775-332-1450 and schedule a time to come and see this gently owned vehicle. You can buy a vehicle anywhere, but I promise you, no one is going to take better care of you than here at Williams Buick GMC, where quality and customer service are our top priority! Proudly serving the Charlotte, Fort Mill, Rock Hill, Huntersville, Gastonia, and Columbia areas."
     }
   ]
-  
-    }
-    
-const roorReducer=(state=initialState, action)=>{
-    return state;
+
+}
+
+const roorReducer = (state = initialState, action) => {
+  return state;
 }
 export default roorReducer
