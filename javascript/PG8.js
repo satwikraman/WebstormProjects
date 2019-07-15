@@ -10,14 +10,14 @@
 }
 var account=getAccount(100,1000,'checking')
 console.log(account.withdraw(100))*/
-var account1=new Object()
-account1.type="checking"
-account1.number=102
-Object.defineProperty(account1,"balance",{
-    enumerable:true,
-    writable:true,
-    configurable:true,
-    value:1000.0
+var account1 = new Object()
+account1.type = "checking"
+account1.number = 102
+Object.defineProperty(account1, "balance", {
+    enumerable: true,
+    writable: true,
+    configurable: true,
+    value: 1000.0
 
 })
 /*var obj={
@@ -27,6 +27,6 @@ Object.defineProperty(account1,"balance",{
 
 }*/
 //account1.balance=2000
-for(var key in account1){
-    console.log("key "+key+" value "+ account1[key])
+for (var key in account1) {
+    console.log("key " + key + " value " + account1[key])
 }

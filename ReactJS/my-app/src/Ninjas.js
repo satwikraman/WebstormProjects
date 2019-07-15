@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Ninjas = ({ninjas, deleteninja}) => {
+const Ninjas = ({ ninjas, deleteninja }) => {
 
   // const { ninjas } = this.props;
   // const ninjaList = ninjas.map(ninja => {
@@ -19,15 +19,15 @@ const Ninjas = ({ninjas, deleteninja}) => {
 
   return (
     <div className="ninja-list">
-      { 
+      {
         ninjas.map(ninja => {
           return true ? (
             <div className="ninja" key={ninja.id}>
-              <div>Name: { ninja.name }</div>
-              <div>Age: { ninja.age }</div>
-              <div>Belt: { ninja.belt }</div>
+              <div>Name: {ninja.name}</div>
+              <div>Age: {ninja.age}</div>
+              <div>Belt: {ninja.belt}</div>
               <div>id:{ninja.id}</div>
-              <button onClick={()=>{deleteninja(ninja.id)}}>Delete</button>
+              <button onClick={() => { deleteninja(ninja.id) }}>Delete</button>
               <hr />
             </div>
           ) : null

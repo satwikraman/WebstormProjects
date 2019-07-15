@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link, NavLink, withRouter} from 'react-router-dom';
-const Navbar=(props)=>{
-    return(
+import { Link, NavLink, withRouter } from 'react-router-dom';
+const Navbar = (props) => {
+    return (
         <nav className="nav-wrapper red darker-3">
             <div className="container">
                 <Link to='/' className="brand-logo">Routing</Link>
@@ -12,6 +12,6 @@ const Navbar=(props)=>{
                 </ul>
             </div>
         </nav>
-        )
+    )
 }
 export default withRouter(Navbar);

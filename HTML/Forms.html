@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title></title>
 </head>
+
 <body>
-<h2>HTML Forms</h2>
-<form action="/action_page.php" method="post" >
-    <fieldset>
-        <legend>Bio Data</legend>
-        First name:<br>
-        <input type="text" name="firstname">
-        <br>
-        Last name:<br>
-        <input type="text" name="lastname" >
-        <br>
-        <input type="radio" name="gender" value="male" checked> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other<br>
-        City:
-        <select name="DOB">
-            <option value="1992">1992</option>
-            <option value="1993">1993</option>
-            <option value="1994">1994</option>
-            <option value="1995">1995</option>
-            <option value="1996">1996</option>
-        </select><br>
-        Address:<br>
-        <textarea name="Address" rows="5" cols="30">Please enter your address here</textarea>
-        <br>
-        <input type="date" name="dob"><br>
-        <input list="city">
-        <datalist id="city">
-            <option value="Hyderabad">
-            <option value="Delhi">
-            <option value="Vizag">
-            <option value="Banglore">
-            <option value="Chennai">
-        </datalist>
-        <button onclick="alert('form submited')">submit</button>
-        <br>
-        <input type="checkbox" name="bcx">check box
-        <input type="checkbox" name="jsa"> check
-    </fieldset>
-</form>
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php" method="post">
+        <fieldset>
+            <legend>Bio Data</legend>
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            City:
+            <select name="DOB">
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+            </select><br>
+            Address:<br>
+            <textarea name="Address" rows="5" cols="30">Please enter your address here</textarea>
+            <br>
+            <input type="date" name="dob"><br>
+            <input list="city">
+            <datalist id="city">
+                <option value="Hyderabad">
+                <option value="Delhi">
+                <option value="Vizag">
+                <option value="Banglore">
+                <option value="Chennai">
+            </datalist>
+            <button onclick="alert('form submited')">submit</button>
+            <br>
+            <input type="checkbox" name="bcx">check box
+            <input type="checkbox" name="jsa"> check
+        </fieldset>
+    </form>
 
 </body>
+
 </html>

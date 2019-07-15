@@ -1,7 +1,7 @@
-function mul(a){
-    return function (b){
-        return function (c){
-            return a*b*c;
+function mul(a) {
+    return function (b) {
+        return function (c) {
+            return a * b * c;
         }
     }
 }

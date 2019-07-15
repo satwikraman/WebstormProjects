@@ -8,7 +8,7 @@ var second = date.getSeconds();
 var minute = date.getMinutes();
 var hour = date.getHours();
 // Convert hour
-if(hour > 12) hour = hour - 12;
+if (hour > 12) hour = hour - 12;
 // Convert time to degrees
 var secondDeg = second * (360 / 60);
 var minuteDeg = minute * (360 / 60);
@@ -20,13 +20,13 @@ minuteHand.style.transform = 'rotate(' + minuteDeg + 'deg)'
 hourHand.style.transform = 'rotate(' + hourDeg + 'deg)'
 
 function theRealRotation() {
-  setInterval(function() {
+  setInterval(function () {
     var date = new Date();
     var currentMinute = date.getMinutes();
     var currentHour = date.getHours();
     console.log(currentMinute, currentHour);
-    if(currentHour > 12) currentHour = currentHour - 12;
-    
+    if (currentHour > 12) currentHour = currentHour - 12;
+
     // get minute hand degree and add 6 degrees to account for earlier waiting tick
     var minuteDeg = (currentMinute * (360 / 60)) + 6;
     var hourDeg = (currentHour + (currentMinute / 60)) * (360 / 12);
@@ -38,7 +38,7 @@ function theRealRotation() {
 
 // find the delay needed to make minute tick in sync with second hand the first time
 var waitToTickTime = (360 - secondDeg) / 6;
-setTimeout(function() {
+setTimeout(function () {
   var newMinuteDeg = minuteDeg + 6;
   minuteHand.style.transform = 'rotate(' + newMinuteDeg + 'deg)'
   theRealRotation();

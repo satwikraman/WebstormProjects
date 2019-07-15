@@ -1,8 +1,8 @@
 import React from 'react';
 
-const About=(props)=>{
+const About = (props) => {
     console.log(props);
-    return(
+    return (
         <div>
             <div className="container">
                 <h4 className="center">About</h4>

@@ -1,4 +1,4 @@
-function  isBalanced(input) {
+function isBalanced(input) {
     var counter = 0;
     while (!input.hasMoreChar) {
         var c = input.readNextChar();

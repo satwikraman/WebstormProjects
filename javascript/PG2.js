@@ -1,13 +1,13 @@
-var obj={
-    name:"satwik",
-    age:22
+var obj = {
+    name: "satwik",
+    age: 22
 }
-for(var item in obj){
-	console.log(obj[item])
+for (var item in obj) {
+    console.log(obj[item])
 }
 obj.pop;
 console.log(obj)
-var x=[]
+var x = []
 x.push(1)
 x.push(2)
 x.push(3)
@@ -31,7 +31,7 @@ console.log(z.join(", "))
 console.log(x.toLocaleString())
 console.log(x.indexOf(35))*/
 console.log(x)
-console.log(x.slice(2,3))
-console.log(x.splice(2,1,5,65,54))
+console.log(x.slice(2, 3))
+console.log(x.splice(2, 1, 5, 65, 54))
 console.log(x)
 console.log(this)

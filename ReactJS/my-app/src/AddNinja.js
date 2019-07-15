@@ -24,7 +24,7 @@ class AddNinja extends Component {
           <label htmlFor="age">Age:</label>
           <input type="text" id="age" onChange={this.handleChange} />
           <label htmlFor="belt">Belt:</label>
-          <input type="text"id="belt" onChange={this.handleChange} />
+          <input type="text" id="belt" onChange={this.handleChange} />
           <button>Submit</button>
         </form>
       </div>

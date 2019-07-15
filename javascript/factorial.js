@@ -7,10 +7,10 @@
 }
 console.log(fact(10))*/
 //recursion function expression
-var fact =function temp(n) {
-    if(n===1){
+var fact = function temp(n) {
+    if (n === 1) {
         return 1
     }
-    return n*temp(n-1)
+    return n * temp(n - 1)
 }
 console.log(fact(10))

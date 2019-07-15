@@ -6,26 +6,26 @@ class App extends Component {
   state = {
     todos: []
   }
-  componentDidMount(){
+  componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(res=>res.json())
-    .then(res=>{
-      console.log(res);
-      this.setState({
-        todos:res.slice(0,10)
+      .then(res => res.json())
+      .then(res => {
+        console.log(res);
+        this.setState({
+          todos: res.slice(0, 10)
+        })
       })
-    })
   }
-  addTodo=(todo)=>{
-    todo.id=Math.random();
-    let todos=[...this.state.todos,todo];
+  addTodo = (todo) => {
+    todo.id = Math.random();
+    let todos = [...this.state.todos, todo];
     this.setState({
       todos
     })
   }
-  deleteTodo=(id)=>{
-    const todos=this.state.todos.filter(todo=>{
-      return todo.id !==id
+  deleteTodo = (id) => {
+    const todos = this.state.todos.filter(todo => {
+      return todo.id !== id
     })
     this.setState({
       todos

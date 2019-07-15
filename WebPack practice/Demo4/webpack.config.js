@@ -1,17 +1,17 @@
-module.exports={
-    entry:'./main.js',
-    output:{
-        filename:'bundle.js'
+module.exports = {
+    entry: './main.js',
+    output: {
+        filename: 'bundle.js'
     },
-    module:{
-        rules:[
+    module: {
+        rules: [
             {
                 test: /\.(png|jpg|gif)$/i,
-                use:[
+                use: [
                     {
-                        loader:'url-loader',
-                        options:{
-                            limit:8192
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192
                         }
                     }
                 ]

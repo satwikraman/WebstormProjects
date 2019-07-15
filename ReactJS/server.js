@@ -1,10 +1,10 @@
-var express=require('express');
-var app= express();
-app.get('/',function(req,res){
-    res.sendFile(__dirname+'/index.html')
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/index.html')
 });
-app.get('/form',function(req,res){
+app.get('/form', function (req, res) {
     console.log(req.url)
-    res.sendFile(__dirname+'/Form.html');
+    res.sendFile(__dirname + '/Form.html');
 });
 app.listen(3030);

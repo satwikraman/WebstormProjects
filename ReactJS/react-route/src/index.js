@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 import roorReducer from './reducers/rootReducer'
 
-const store=createStore(roorReducer);
+const store = createStore(roorReducer);
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

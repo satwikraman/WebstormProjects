@@ -1,9 +1,9 @@
 import React from 'react';
 import HigherComponent from '../components/hoc/HigherComponent';
 
-const Contact=(props)=>{
+const Contact = (props) => {
     console.log(props);
-    return(
+    return (
         <div>
             <div className="container">
                 <h4 className="center">Contact</h4>
