@@ -23,10 +23,10 @@ const Ninjas = ({ ninjas, deleteninja }) => {
         ninjas.map(ninja => {
           return true ? (
             <div className="ninja" key={ninja.id}>
-              <div>Name: {ninja.name}</div>
-              <div>Age: {ninja.age}</div>
-              <div>Belt: {ninja.belt}</div>
-              <div>id:{ninja.id}</div>
+              <React.Fragment>Name: {ninja.name}</React.Fragment><br />
+              <React.Fragment>Age: {ninja.age}</React.Fragment><br />
+              <React.Fragment>Belt: {ninja.belt}</React.Fragment><br />
+              <React.Fragment>id:{ninja.id}</React.Fragment><br />
               <button onClick={() => { deleteninja(ninja.id) }}>Delete</button>
               <hr />
             </div>

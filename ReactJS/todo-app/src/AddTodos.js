@@ -19,12 +19,12 @@ class AddTodos extends Component {
 
     render() {
         return (
-            <div className="container">
+            <React.Fragment className="container">
                 <form onSubmit={this.handleSubmit}>
                     <label>Add a new Todo:</label>
                     <input type="text" onChange={this.handleChange} value={this.state.title} required />
                 </form>
-            </div>
+            </React.Fragment>
         )
     }
 }

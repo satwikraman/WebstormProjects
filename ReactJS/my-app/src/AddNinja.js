@@ -17,7 +17,7 @@ class AddNinja extends Component {
   }
   render() {
     return (
-      <div>
+      <React.Fragment>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" onChange={this.handleChange} />
@@ -27,7 +27,7 @@ class AddNinja extends Component {
           <input type="text" id="belt" onChange={this.handleChange} />
           <button>Submit</button>
         </form>
-      </div>
+      </React.Fragment>
     )
   }
 }
